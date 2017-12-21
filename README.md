@@ -1,6 +1,6 @@
 # Kntnt's posts shortcode
 
-Provides shortcode that lists posts (and other content tytpes).
+Provides shortcode that lists posts (and other content types).
 
 ## Description
 
@@ -26,7 +26,7 @@ The shortcode `[posts 10 post_type="page"]` outputs a list with ten pages ordere
 
 ### Detailed description
 
-The shortcode `[posts …]` takes up to four arguments. The arguments can be given either in the format `key="value"` or just as `"value"`. The order of the arguments is important in the latter case. The arguments in order are:
+The shortcode `[posts …]` takes up to four arguments. The arguments can be given either in the format `key="value"` or just as `value`. The order of the arguments is important in the latter case. The arguments in order are:
 
 1. `limit="…"` where `…` is the number of posts to output. If omitted or empty, all posts are included.
 2. `type="…"` where `…` is either `date` for sorting by date or `title` for sorting by title. If omitted, `date` is used.
