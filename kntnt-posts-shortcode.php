@@ -60,9 +60,12 @@ final class Plugin {
 
   private function shortcode_atts($pairs, $atts, $shortcode = '') {
 
-    $atts = (array) $atts;
     $out = [];
     $pos = 0;
+
+    // $atts can be a string which is cast to an array. An empty string should
+    // be an empty array (not an array with an empty element as by casting).
+    $atts = $atts ? (array) $atts : [];
 
     while($name = key($pairs)) {
       $default = array_shift($pairs);
